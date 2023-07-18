@@ -1,0 +1,28 @@
+
+{% extends 'layout.html' %}
+
+{% block content  %}
+
+<div>
+
+    <div class="d-flex align-items-center justify-content-center">
+        <img style="border-radius: 10px;" class="img-fluid" src="{{post.image.url}}" alt="">
+    </div>
+
+    <div>
+        <h2  class="d-flex align-items-center justify-content-center">
+            {{post.title}}
+        </h2>
+        
+        <p  class="d-flex align-items-center justify-content-center">
+            {{post.description}} 
+        </p>
+        <strong  class="d-flex align-items-center justify-content-end">{{post.date}}</strong>
+        </div>
+    </div>
+
+</div>
+
+{% endblock  %}
+
+
